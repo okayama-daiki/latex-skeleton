@@ -1,0 +1,85 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage{luatexja}
+
+\usepackage[backend=bibtex, style=numeric]{biblatex}
+\addbibresource{references.bib}
+
+% Theme
+\usetheme{Boadilla}     % Like default, but with a footer
+\usecolortheme{default}
+
+% Fonts
+\setbeamerfont{title}{size=\large,series=\bfseries}
+\usefonttheme{professionalfonts}
+\usefonttheme{structurebold}
+\setbeamerfont{title}{size=\LARGE}
+\setbeamerfont{date}{size=\small}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\usepackage[T1]{fontenc}
+\usepackage{mlmodern}
+\usepackage{luatexja-otf}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\familydefault}{\sfdefault}
+
+\title{スケルトンの役割と応用}
+\author{岡山大輝}
+\institute{兵庫県立大学}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage{}
+\end{frame}
+
+\begin{frame}{概要}
+  \begin{itemize}
+    \item スケルトンは、骨格や基盤を指す用語であり、多くの分野で重要な役割を果たす。
+    \item 本スライドでは、生物学、建築学、コンピュータサイエンスにおけるスケルトンの利用価値と応用例を紹介する。
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{生物学におけるスケルトン}
+  \begin{itemize}
+    \item 骨や軟骨で構成され、身体の支持、運動、保護の機能を果たす。
+    \item 人間の骨格は206個の骨から成る。
+    \item 近年の研究: スケルトンの再生医療、骨粗鬆症の治療法~\cite{okayama2024how}。
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{建築学におけるスケルトン}
+  \begin{itemize}
+    \item 建物の骨組みやフレームを指し、全体の構造を支持する役割。
+    \item 鋼鉄やコンクリートなどの素材を使用。
+    \item 耐震性や耐久性の向上に貢献。
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{コンピュータサイエンスにおけるスケルトン}
+  \begin{itemize}
+    \item アルゴリズムやデータ構造の基本的なフレームワーク。
+    \item ツリー構造やグラフ構造: データの効率的な管理と検索。
+    \item 並列処理や分散システムの設計における重要性。
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{スケルトンの応用例}
+  \begin{itemize}
+    \item ロボティクス: 柔軟な動作と耐久性を持つロボットのフレームワーク。
+    \item バイオメカニクス: 人間の動作解析やリハビリテーション支援技術。
+    \item 仮想現実や拡張現実: モデリング技術におけるスケルトンの重要性。
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{結論}
+  \begin{itemize}
+    \item スケルトンは多くの分野で重要な役割を果たしている。
+    \item その応用範囲は広く、今後も研究と応用が進展すると期待される。
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{引用文献}
+  \printbibliography{}
+\end{frame}
+
+\end{document}
