@@ -1,11 +1,13 @@
 \documentclass[aspectratio=169]{beamer}
+
+% Packages
 \usepackage{luatexja}
 
 % \usepackage[backend=biber, style=numeric]{biblatex}
 % TODO: My biber (2.20) and biblatex (3.19) versions are incompatible, but I am tired to upgrade/downgrade them.
 % Instead, I am temporarily using bibtex as a backend.
 % See detail https://github.com/orgs/Homebrew/discussions/3003#discussioncomment-9153790
-\usepackage[backend=bibtex, style=numeric]{biblatex}
+\usepackage[backend=bibtex, style=alphabetic, sorting=none]{biblatex}
 \addbibresource{references.bib}
 
 % Theme
@@ -25,10 +27,18 @@
 \renewcommand{\kanjifamilydefault}{\gtdefault}
 \renewcommand{\familydefault}{\sfdefault}
 
+% Beamer settings
 \title{スケルトンの役割と応用}
 \author{岡山大輝}
 \institute{兵庫県立大学}
 \date{\today}
+
+\AtBeginSection[]
+{
+  \begin{frame}{目次}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
 
 \begin{document}
 
@@ -36,12 +46,20 @@
   \titlepage{}
 \end{frame}
 
+\begin{frame}{目次}
+  \tableofcontents
+\end{frame}
+
+\section{概要}
+
 \begin{frame}{概要}
   \begin{itemize}
     \item スケルトンは、骨格や基盤を指す用語であり、多くの分野で重要な役割を果たす。
     \item 本スライドでは、生物学、建築学、コンピュータサイエンスにおけるスケルトンの利用価値と応用例を紹介する。
   \end{itemize}
 \end{frame}
+
+\section{生物学におけるスケルトン}
 
 \begin{frame}{生物学におけるスケルトン}
   \begin{itemize}
@@ -51,6 +69,8 @@
   \end{itemize}
 \end{frame}
 
+\section{建築学におけるスケルトン}
+
 \begin{frame}{建築学におけるスケルトン}
   \begin{itemize}
     \item 建物の骨組みやフレームを指し、全体の構造を支持する役割。
@@ -58,6 +78,8 @@
     \item 耐震性や耐久性の向上に貢献。
   \end{itemize}
 \end{frame}
+
+\section{コンピュータサイエンスにおけるスケルトン}
 
 \begin{frame}{コンピュータサイエンスにおけるスケルトン}
   \begin{itemize}
@@ -67,6 +89,8 @@
   \end{itemize}
 \end{frame}
 
+\section{スケルトンの応用例}
+
 \begin{frame}{スケルトンの応用例}
   \begin{itemize}
     \item ロボティクス: 柔軟な動作と耐久性を持つロボットのフレームワーク。
@@ -74,6 +98,8 @@
     \item 仮想現実や拡張現実: モデリング技術におけるスケルトンの重要性。
   \end{itemize}
 \end{frame}
+
+\section{結論}
 
 \begin{frame}{結論}
   \begin{itemize}
@@ -83,7 +109,7 @@
 \end{frame}
 
 \begin{frame}{引用文献}
-  \printbibliography{}
+  \printbibliography[title=引用文献]{}
 \end{frame}
 
 \end{document}
