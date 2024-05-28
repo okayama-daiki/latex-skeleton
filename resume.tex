@@ -4,6 +4,19 @@
 \usepackage[backend=bibtex, style=numeric]{biblatex}
 \addbibresource{references.bib}
 
+% Packages
+\usepackage{amsthm}       % proof environment
+\usepackage{algorithmic}  % algorithmic environment
+\usepackage{algorithm}    % algorithm environment
+
+% Japanize
+\newtheorem{theorem}{定理}
+\newtheorem{lemma}{補題}
+\newtheorem{definition}{定義}
+\newtheorem{corollary}{系}
+\renewcommand{\proofname}{\textbf{証明}}
+
+% Metadata
 \title{スケルトンの役割と応用}
 \author{岡山大輝}
 \date{\today}
