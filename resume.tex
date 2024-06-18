@@ -1,13 +1,16 @@
 \documentclass[lualatex, article]{jlreq}
-\usepackage{luatexja}
-
-\usepackage[backend=bibtex, style=alphabetic, sorting=none]{biblatex}
-\addbibresource{references.bib}
 
 % Packages
-\usepackage{amsthm}       % proof environment
-\usepackage{algorithmic}  % algorithmic environment
-\usepackage{algorithm}    % algorithm environment
+\usepackage{luatexja}     % Japanize
+\usepackage[backend=biber,
+            style=alphabetic,
+            sorting=none,
+            ]{biblatex}    % bibliography
+\usepackage{amsthm}        % proof environment
+\usepackage{algorithmic}   % algorithmic environment
+\usepackage{algorithm}     % algorithm environment
+
+\addbibresource{references.bib}
 
 % Japanize
 \newtheorem{theorem}{定理}
