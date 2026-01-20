@@ -13,8 +13,8 @@
 % Bibliography
 \usepackage[
   backend=biber,
-  style=authoryear, % alphabetic
-  sorting=none,
+  style=authoryear,  % or alphabetic, ...
+  sorting=none,      % or ...
 ]{biblatex}
 
 \addbibresource{references.bib}
@@ -27,10 +27,11 @@
 % \captionsetup[table]{labelformat=empty}
 
 % Theorem environments
-\setbeamertemplate{theorems}[numbered]  % Numbered theorems, lemmas, etc.
+% \setbeamertemplate{theorems}[numbered]  % Numbered theorems, lemmas, etc.
 
 % Beamer settings
 \title{スケルトンの役割と応用}
+\subtitle{各分野における利用価値と応用例}
 \author{岡山 大輝 (\textit{ad25r010@guh.u-hyogo.ac.jp})}
 \institute{兵庫県立大学大学院 情報科学研究科 東川研究室}
 \date{\today}
@@ -42,9 +43,6 @@
   \end{frame}
 }
 
-% \setbeamertemplate{caption}{}
-% \setbeamertemplate{figure}{}
-
 % Theme
 \usetheme{metropolis}
 \usecolortheme{default}
@@ -54,8 +52,8 @@
 % Fonts
 \usefonttheme{professionalfonts}
 \usefonttheme{structurebold}
-\setbeamerfont{title}{size=\large,series=\bfseries}
-\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamerfont{title}{size=\LARGE, series=\bfseries}
+\setbeamerfont{frametitle}{size=\large, series=\bfseries}
 \setbeamerfont{date}{size=\small}
 \renewcommand{\kanjifamilydefault}{\gtdefault}
 \renewcommand{\familydefault}{\sfdefault}
@@ -75,7 +73,7 @@
 
 			\begin{figure}
 				\begin{center}
-					\includegraphics[width=0.95\textwidth]{figures/skeleton.png}
+					\includegraphics[width=0.90\textwidth]{figures/skeleton.png}
 				\end{center}
 			\end{figure}
 

@@ -1,26 +1,42 @@
 \documentclass[article]{jlreq}
 
 % Packages
-\usepackage[backend=biber,
-            style=alphabetic,
-            sorting=none,
-            ]{biblatex}    % bibliography
-\usepackage{amsthm}        % proof environment
-\usepackage{algorithmic}   % algorithmic environment
-\usepackage{algorithm}     % algorithm environment
+\usepackage{amsthm}        % AMS style theorems
+\usepackage{amsmath}       % AMS style math environment (e.g. \align, \gather, \cases)
+\usepackage{amssymb}       % AMS style math symbols (e.g. \mathbb, \leqslant)
+\usepackage{amsfonts}      % AMS style math fonts (e.g. \mathbb)
+\usepackage{xspace}        % For proper spacing after macros
+
+% Bibliography
+\usepackage[
+  backend=biber,
+  style=alphabetic,
+  sorting=none,
+]{biblatex}
 
 \addbibresource{references.bib}
 
-% Japanize
-\newtheorem{theorem}{定理}
-\newtheorem{lemma}{補題}
-\newtheorem{definition}{定義}
-\newtheorem{corollary}{系}
+% Macros
+\newcommand{\ALG}{\textsf{\upshape ALG}\xspace}
+\newcommand{\OPT}{\textsf{\upshape OPT}\xspace}
+
+% Theorem environments
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{definition}{Definition}
+\newtheorem{question}{Question}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{conjecture}[theorem]{Conjecture}
 
 % Metadata
 \title{スケルトンの役割と応用}
 \author{岡山 大輝}
 \date{\today}
+
+% ==============================================================================================
+% ==============================================================================================
 
 \begin{document}
 
@@ -55,6 +71,5 @@
 本論文では、スケルトンの基本的な概念とその利用価値について述べた。生物学、建築学、コンピュータサイエンスの各分野において、スケルトンは重要な役割を果たしている。また、これらの分野でのスケルトンの応用例を通じて、その有用性が再認識されている。今後もスケルトンの研究と応用が進展し、さらなる発展が期待される。
 
 \printbibliography[title=引用文献]{}
-
 
 \end{document}
