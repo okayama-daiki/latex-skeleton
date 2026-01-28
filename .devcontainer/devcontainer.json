@@ -1,5 +1,8 @@
 {
-    "name": "texlive",
-    "image": "texlive/texlive:latest",
-    "containerUser": "texlive",
+	"name": "texlive",
+	"image": "texlive/texlive:latest",
+	"containerUser": "texlive",
+	"features": {
+		"ghcr.io/devcontainers/features/sshd:1": {}
+	}
 }
