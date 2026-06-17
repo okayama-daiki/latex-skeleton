@@ -3,8 +3,11 @@
 % Packages
 \usepackage{amsthm}        % AMS style theorems
 \usepackage{amsmath}       % AMS style math environment (e.g. \align, \gather, \cases)
+\usepackage{mathtools}     % Extension of amsmath (e.g. \coloneqq)
 \usepackage{amssymb}       % AMS style math symbols (e.g. \mathbb, \leqslant)
 \usepackage{amsfonts}      % AMS style math fonts (e.g. \mathbb)
+\usepackage{graphicx}      % For including figures
+\usepackage{booktabs}      % For formal tables
 \usepackage{xspace}        % For proper spacing after macros
 
 % Bibliography
@@ -17,16 +20,17 @@
 \addbibresource{references.bib}
 
 % Macros
-\newcommand{\ALG}{\textsf{\upshape ALG}\xspace}
-\newcommand{\OPT}{\textsf{\upshape OPT}\xspace}
+\NewDocumentCommand{\ALG}{}{\textsf{\upshape ALG}\xspace}
+\NewDocumentCommand{\OPT}{}{\textsf{\upshape OPT}\xspace}
+\NewDocumentCommand{\set}{m}{\ensuremath{\{#1\}}}
 
 % Theorem environments
 \newtheorem{theorem}{Theorem}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{claim}[theorem]{Claim}
-\newtheorem{definition}{Definition}
-\newtheorem{question}{Question}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{question}[theorem]{Question}
 \newtheorem{fact}[theorem]{Fact}
 \newtheorem{conjecture}[theorem]{Conjecture}
 

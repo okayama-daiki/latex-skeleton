@@ -30,16 +30,16 @@ If you do not have TeX Live installed locally, the following environment is requ
 - [Zed](https://zed.dev)  
   A fast, minimal code editor. Configuration files for Zed are included.
 
-This templates can also be built in any Dev Container–compatible environment.
+These templates can also be built in any Dev Container–compatible environment.
 
 ## Quick start
 
-Build everything (resume and slides):
+Build everything (report and slides):
 
 1. Open the Dev Container (or install TeX Live locally)
 2. Run:
     ```bash
-    latexmk resume.tex
+    latexmk report.tex
     # or
     latexmk slides.tex
     ```
